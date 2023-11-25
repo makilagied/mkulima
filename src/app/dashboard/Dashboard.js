@@ -185,11 +185,7 @@ export class Dashboard extends Component {
       <div>
         <div className="proBanner">
           <div>
-            <span className="d-flex align-items-center purchase-popup">
-              <p>Get tons of UI components, Plugins, multiple layouts, 20+ sample pages, and more!</p>
-              <a href="https://www.bootstrapdash.com/product/purple-react/?utm_source=organic&utm_medium=banner&utm_campaign=free-preview" rel="noopener noreferrer" target="_blank" className="btn btn-sm purchase-button ml-auto">Check Pro Version</a>
-              <i className="mdi mdi-close bannerClose" onClick={this.toggleProBanner}></i>
-            </span>
+
           </div>
         </div>
         <div className="page-header">
@@ -210,9 +206,9 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-danger card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Weekly Sales <i className="mdi mdi-chart-line mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Outstanding Loan <i className="mdi mdi-chart-line mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">$ 15,0000</h2>
+                <h2 className="mb-5">Tsh 15,000</h2>
                 <h6 className="card-text">Increased by 60%</h6>
               </div>
             </div>
@@ -221,9 +217,9 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-info card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Weekly Orders <i className="mdi mdi-bookmark-outline mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Production <i className="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">45,6334</h2>
+                <h2 className="mb-5">Kg 45,634</h2>
                 <h6 className="card-text">Decreased by 10%</h6>
               </div>
             </div>
@@ -232,9 +228,9 @@ export class Dashboard extends Component {
             <div className="card bg-gradient-success card-img-holder text-white">
               <div className="card-body">
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
-                <h4 className="font-weight-normal mb-3">Visitors Online <i className="mdi mdi-diamond mdi-24px float-right"></i>
+                <h4 className="font-weight-normal mb-3">Member Farmers <i className="mdi mdi-diamond mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">95,5741</h2>
+                <h2 className="mb-5">741</h2>
                 <h6 className="card-text">Increased by 5%</h6>
               </div>
             </div>
@@ -245,7 +241,7 @@ export class Dashboard extends Component {
             <div className="card">
               <div className="card-body">
                 <div className="clearfix mb-4">
-                  <h4 className="card-title float-left">Visit And Sales Statistics</h4>
+                  <h4 className="card-title float-left">Sales Statistics</h4>
                   <div id="visit-sale-chart-legend" className="rounded-legend legend-horizontal legend-top-right float-right">
                     <ul>
                       <li>
@@ -270,21 +266,21 @@ export class Dashboard extends Component {
           <div className="col-md-5 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Traffic Sources</h4>
+                <h4 className="card-title">Stock</h4>
                 <Doughnut data={this.state.trafficData} options={this.state.trafficOptions} />
                 <div id="traffic-chart-legend" className="rounded-legend legend-vertical legend-bottom-left pt-4">
                   <ul>
                     <li>
-                      <span className="legend-dots bg-info"></span>Search Engines
-                      <span className="float-right">30%</span>
+                      <span className="legend-dots bg-info"></span>RICE
+                      <span className="float-right">3,000 kg</span>
                     </li>
                     <li>
-                      <span className="legend-dots bg-success"></span>Direct Click
-                      <span className="float-right">30%</span>
+                      <span className="legend-dots bg-success"></span>BEANS
+                      <span className="float-right">3,000 kg</span>
                     </li>
                     <li>
-                      <span className="legend-dots bg-danger"></span>Bookmarks Click
-                      <span className="float-right">40%</span>
+                      <span className="legend-dots bg-danger"></span>MAIZE
+                      <span className="float-right">4,000 kg</span>
                     </li>
                   </ul>
                 </div>
@@ -296,57 +292,57 @@ export class Dashboard extends Component {
           <div className="col-12 grid-margin">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Recent Tickets</h4>
+                <h4 className="card-title">LOANS </h4>
                 <div className="table-responsive">
                   <table className="table">
                     <thead>
                       <tr>
-                        <th> Assignee </th>
-                        <th> Subject </th>
-                        <th> Status </th>
-                        <th> Last Update </th>
-                        <th> Tracking ID </th>
+                        <th> Name </th>
+                        <th> Produce </th>
+                        <th> Loan Status </th>
+                        <th> Association </th>
+                        <th> Membership ID </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <td>
                           <img src={require("../../assets/images/faces/face1.jpg")} className="mr-2" alt="face" /> David Grey </td>
-                        <td> Fund is not recieved </td>
+                        <td> Maize </td>
                         <td>
-                          <label className="badge badge-gradient-success">DONE</label>
+                          <label className="badge badge-gradient-success">PAYED</label>
                         </td>
-                        <td> Dec 5, 2017 </td>
+                        <td> KANU </td>
                         <td> WD-12345 </td>
                       </tr>
                       <tr>
                         <td>
                           <img src={require("../../assets/images/faces/face2.jpg")} className="mr-2" alt="face" /> Stella Johnson </td>
-                        <td> High loading time </td>
+                        <td> Maize </td>
                         <td>
-                          <label className="badge badge-gradient-warning">PROGRESS</label>
+                          <label className="badge badge-gradient-warning">PAYING</label>
                         </td>
-                        <td> Dec 12, 2017 </td>
+                        <td> TUMAINI </td>
                         <td> WD-12346 </td>
                       </tr>
                       <tr>
                         <td>
                           <img src={require("../../assets/images/faces/face3.jpg")} className="mr-2" alt="face" /> Marina Michel </td>
-                        <td> Website down for one week </td>
+                        <td> BEANS </td>
                         <td>
-                          <label className="badge badge-gradient-info">ON HOLD</label>
+                          <label className="badge badge-gradient-info">PROCESSING</label>
                         </td>
-                        <td> Dec 16, 2017 </td>
+                        <td> KANU </td>
                         <td> WD-12347 </td>
                       </tr>
                       <tr>
                         <td>
                           <img src={require("../../assets/images/faces/face4.jpg")} className="mr-2" alt="face" /> John Doe </td>
-                        <td> Loosing control on server </td>
+                        <td> RICE </td>
                         <td>
                           <label className="badge badge-gradient-danger">REJECTED</label>
                         </td>
-                        <td> Dec 3, 2017 </td>
+                        <td> CHAWAMA </td>
                         <td> WD-12348 </td>
                       </tr>
                     </tbody>
@@ -361,14 +357,14 @@ export class Dashboard extends Component {
           <div className="col-xl-7 grid-margin stretch-card">
             <div className="card">
               <div className="card-body">
-                <h4 className="card-title">Project Status</h4>
+                <h4 className="card-title">PRODUCTION</h4>
                 <div className="table-responsive">
                   <table className="table">
                     <thead>
                       <tr>
                         <th> # </th>
                         <th> Name </th>
-                        <th> Due Date </th>
+                        <th> Produce</th>
                         <th> Progress </th>
                       </tr>
                     </thead>
@@ -376,7 +372,7 @@ export class Dashboard extends Component {
                       <tr>
                         <td> 1 </td>
                         <td> Herman Beck </td>
-                        <td> May 15, 2015 </td>
+                        <td> Maize </td>
                         <td>
                           <ProgressBar variant="gradient-success" now={25}/>
                         </td>
@@ -384,14 +380,14 @@ export class Dashboard extends Component {
                       <tr>
                         <td> 2 </td>
                         <td> Messsy Adam </td>
-                        <td> Jul 01, 2015 </td>
+                        <td> Rice </td>
                         <td>
                         <ProgressBar variant="gradient-danger" now={75}/>
                         </td>
                       </tr>
                       <tr>
                         <td> 3 </td>
-                        <td> John Richards </td>
+                        <td> Beans </td>
                         <td> Apr 12, 2015 </td>
                         <td>
                         <ProgressBar variant="gradient-warning" now={90}/>
@@ -399,7 +395,7 @@ export class Dashboard extends Component {
                       </tr>
                       <tr>
                         <td> 4 </td>
-                        <td> Peter Meggik </td>
+                        <td> Rice </td>
                         <td> May 15, 2015 </td>
                         <td>
                         <ProgressBar variant="gradient-primary" now={50}/>
@@ -408,7 +404,7 @@ export class Dashboard extends Component {
                       <tr>
                         <td> 5 </td>
                         <td> Edward </td>
-                        <td> May 03, 2015 </td>
+                        <td> Beans </td>
                         <td>
                         <ProgressBar variant="gradient-danger" now={50}/>
                         </td>
@@ -416,7 +412,7 @@ export class Dashboard extends Component {
                       <tr>
                         <td> 5 </td>
                         <td> Ronald </td>
-                        <td> Jun 05, 2015 </td>
+                        <td> Maize </td>
                         <td>
                         <ProgressBar variant="gradient-info" now={65}/>
                         </td>
