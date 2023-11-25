@@ -68,91 +68,9 @@ export class Dashboard extends Component {
         },
         legend: false,
       },
-      todos: [
-        {
-            id: 1,
-            task: 'Pick up kids from school',
-            isCompleted: false
-        },
-        {
-            id: 2,
-            task: 'Prepare for presentation',
-            isCompleted: true
-        },
-        {
-            id: 3,
-            task: 'Print Statements',
-            isCompleted: false
-        },
-        {
-            id: 4,
-            task: 'Create invoice',
-            isCompleted: false
-        },
-        {
-            id: 5,
-            task: 'Call John',
-            isCompleted: true
-        },
-        {
-            id: 6,
-            task: 'Meeting with Alisa',
-            isCompleted: false
-        }
-      ],
-      inputValue: '',
-    }
-    this.statusChangedHandler = this.statusChangedHandler.bind(this);
-    this.addTodo = this.addTodo.bind(this);
-    this.removeTodo = this.removeTodo.bind(this);
-    this.inputChangeHandler = this.inputChangeHandler.bind(this);
-  }
-  statusChangedHandler(event, id) {
 
-    //const todoIndex = this.state.todos.findIndex( t => t.id === id );
-    const todo = {...this.state.todos[id]};
-    todo.isCompleted = event.target.checked;
-
-    const todos = [...this.state.todos];
-    todos[id] = todo;
-
-    this.setState({
-        todos: todos
-    })
   }
 
-  addTodo (event) {
-      event.preventDefault();
-
-      const todos = [...this.state.todos];
-      todos.unshift({
-          id: todos.length ? todos[todos.length - 1].id + 1 : 1,
-          task: this.state.inputValue,
-          isCompleted: false
-          
-      })
-
-      this.setState({
-          todos: todos,
-          inputValue: ''
-      })
-  }
-
-  removeTodo (index) {
-      const todos = [...this.state.todos];
-      todos.splice(index, 1);
-
-      this.setState({
-          todos: todos
-      })
-  }
-
-  inputChangeHandler(event) {
-      this.setState({
-          inputValue: event.target.value
-      });
-  }
-  
   componentDidMount(){
     //your code
     var ctx = document.getElementById('visitSaleChart').getContext("2d")
