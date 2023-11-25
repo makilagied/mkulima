@@ -208,7 +208,7 @@ export class Dashboard extends Component {
                 <img src={require("../../assets/images/dashboard/circle.svg")} className="card-img-absolute" alt="circle" />
                 <h4 className="font-weight-normal mb-3">Outstanding Loan <i className="mdi mdi-chart-line mdi-24px float-right"></i>
                 </h4>
-                <h2 className="mb-5">Tsh 15,000</h2>
+                <h2 className="mb-5">Tsh 15,000,000</h2>
                 <h6 className="card-text">Increased by 60%</h6>
               </div>
             </div>
