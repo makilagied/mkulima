@@ -166,9 +166,9 @@ export class Dashboard extends Component {
   
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        'Search Engines',
-        'Direct Click',
-        'Bookmarks Click',
+        'Rice Produce',
+        'Beans Produce',
+        'Maize Produce',
       ]
     };
     this.setState({visitSaleData: newVisitSaleData, trafficData:newTrafficData} )
