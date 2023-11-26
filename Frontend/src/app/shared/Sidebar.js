@@ -80,16 +80,17 @@ class Sidebar extends Component {
           </li>
           <li className={ this.isPathActive('/form-elements') ? 'nav-item active' : 'nav-item' }>
             <div className={ this.state.formElementsMenuOpen ? 'nav-link menu-expanded' : 'nav-link' } onClick={ () => this.toggleMenuState('formElementsMenuOpen') } data-toggle="collapse">
-              <span className="menu-title"><Trans>Form Elements</Trans></span>
+              <span className="menu-title"><Trans>Portal</Trans></span>
               <i className="menu-arrow"></i>
               <i className="mdi mdi-format-list-bulleted menu-icon"></i>
             </div>
             <Collapse in={ this.state.formElementsMenuOpen }>
               <ul className="nav flex-column sub-menu">
-                <li className="nav-item"> <Link className={ this.isPathActive('/form-elements/basic-elements') ? 'nav-link active' : 'nav-link' } to="/form-elements/basic-elements"><Trans>Basic Elements</Trans></Link></li>
+                <li className="nav-item"> <Link className={ this.isPathActive('/form-elements/basic-elements') ? 'nav-link active' : 'nav-link' } to="/form-elements/basic-elements"><Trans>Register</Trans></Link></li>
               </ul>
             </Collapse>
           </li>
+          
         </ul>
       </nav>
     );

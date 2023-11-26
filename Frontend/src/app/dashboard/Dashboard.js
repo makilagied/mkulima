@@ -192,7 +192,7 @@ export class Dashboard extends Component {
           <h3 className="page-title">
             <span className="page-title-icon bg-gradient-primary text-white mr-2">
               <i className="mdi mdi-home"></i>
-            </span> Dashboard </h3>
+            </span> AMCOS Dashboard </h3>
           <nav aria-label="breadcrumb">
             <ul className="breadcrumb">
               <li className="breadcrumb-item active" aria-current="page">
